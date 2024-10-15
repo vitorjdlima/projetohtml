@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #6e4383; /* Fundo roxo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    background-color: #854ca1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+header h1 {
+    text-align: left;
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-row label {
+    width: 100px;
+    margin-right: 10px;
+    align-self: center;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    color: white;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+input::placeholder {
+    color: #d1c7de;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+input[type="text"], input[type="email"] {
+    min-width: 200px;
+}

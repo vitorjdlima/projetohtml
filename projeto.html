@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Dom Bosco</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <img src="dom-bosco-logo.png" alt="Logo Dom Bosco" class="logo">
+            <button class="google-login-btn">
+                <img src="google-logo.png" alt="Google logo">
+                Entrar com Google
+            </button>
+            <form id="loginForm">
+                <input type="text" placeholder="Identificação ou e-mail" required>
+                <input type="password" placeholder="Senha" required>
+                <button type="submit" class="submit-btn">Entrar</button>
+            </form>
+            <a href="#" class="register-link">Não tem cadastro? faça aqui!</a>
+        </div>
+        <div class="image-box">
+            <img src="teacher-and-student.jpg" alt="Teacher and Student">
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Função para redirecionar após submissão
+            document.getElementById("loginForm").addEventListener("submit", function(event) {
+                event.preventDefault();  // Impede o envio padrão do formulário
+    
+                // Redireciona para a página dos cartões (homescreen.html)
+                window.location.href = "homescreen.html";  
+            });
+        });
+    </script>
+    
+</body>
+</html>

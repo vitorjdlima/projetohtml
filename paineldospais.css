@@ -1,0 +1,121 @@
+/* Estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #F0F0F0;
+    color: #333;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #7B47D1;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Conteúdo */
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Painel de cabeçalho */
+.panel-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.panel-header h1 {
+    font-size: 36px;
+    color: #7B47D1;
+}
+
+/* Painel de caixas */
+.panel-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    width: 65%;
+    background-color: #ffff;
+}
+
+.panel-container h1{
+    color: #ffff;
+}
+
+.panel-box {
+    background-color: #B38AE4;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.panel-box h2 {
+    font-size: 20px;
+    color: #ffff;
+    margin-bottom: 10px;
+}
+
+.panel-box p {
+    font-size: 16px;
+    color: #ffff;
+    line-height: 1.5;
+}
+
+/* Imagem lateral */
+.image-box {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .panel-container {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .image-box {
+        margin-top: 20px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e3e3e3;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6e4383;
+    padding: 10px 20px;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-icons a img {
+    width: 24px;
+    margin-left: 10px;
+}
+
+.container {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1000px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.aluno-nome {
+    text-align: right;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+thead {
+    background-color: #f0f0f0;
+}
+
+thead th {
+    padding: 10px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
