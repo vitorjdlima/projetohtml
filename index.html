@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Dom Bosco</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
     <div class="login-container">
         <div class="login-box">
-            <img src="dom-bosco-logo.png" alt="Logo Dom Bosco" class="logo">
+            <img src="assets/images/dom-bosco-logo.png" alt="Logo Dom Bosco" class="logo">
             <button class="google-login-btn">
-                <img src="google-logo.png" alt="Google logo">
+                <img src="assets/images/google-logo.png" alt="Google logo">
                 Entrar com Google
             </button>
             <form id="loginForm">
@@ -22,7 +22,7 @@
             <a href="#" class="register-link">Não tem cadastro? faça aqui!</a>
         </div>
         <div class="image-box">
-            <img src="teacher-and-student.jpg" alt="Teacher and Student">
+            <img src="assets/images/teacher-and-student.jpg" alt="Teacher and Student">
         </div>
     </div>
 
@@ -33,10 +33,9 @@
                 event.preventDefault();  // Impede o envio padrão do formulário
     
                 // Redireciona para a página dos cartões (homescreen.html)
-                window.location.href = "homescreen.html";  
+                window.location.href = "pages/homescreen.html";  
             });
         });
     </script>
-    
 </body>
 </html>
