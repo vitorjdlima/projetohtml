@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atendimento aos Pais e Responsáveis</title>
+    <link rel="stylesheet" href="../assets/css/formulario.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>ATENDIMENTO AOS PAIS E RESPONSÁVEIS</h1>
+        
+        <form>
+            <fieldset>
+                <legend>1. Informações do aluno</legend>
+                <div class="form-group">
+                    <label for="nome-aluno">Nome do Aluno :</label>
+                    <input type="text" id="nome-aluno" name="nome-aluno">
+                    
+                    <label for="ano-serie">Ano/Série:</label>
+                    <input type="text" id="ano-serie" name="ano-serie">
+                </div>
+
+                <div class="form-group">
+                    <label for="nascimento">Nascimento:</label>
+                    <input type="date" id="nascimento" name="nascimento">
+                    
+                    <label for="turma">Turma:</label>
+                    <input type="text" id="turma" name="turma">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>2. Informações de Pais ou Responsáveis</legend>
+                <div class="form-group">
+                    <label for="nome-pais">Nome :</label>
+                    <input type="text" id="nome-pais" name="nome-pais">
+                    
+                    <label for="telefone">Telefone :</label>
+                    <input type="tel" id="telefone" name="telefone">
+                </div>
+
+                <div class="form-group">
+                    <label for="parentesco">Grau de Parentesco :</label>
+                    <input type="text" id="parentesco" name="parentesco">
+                    
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>A Solicitação foi feita :</legend>
+                <div class="form-group radio-group">
+                    <input type="radio" id="pelos-pais" name="solicitacao" value="pelos-pais">
+                    <label for="pelos-pais">Pelos Pais</label>
+                    
+                    <input type="radio" id="pela-escola" name="solicitacao" value="pela-escola">
+                    <label for="pela-escola">Pela Escola</label>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+</html>
