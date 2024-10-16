@@ -2,76 +2,94 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
 body {
-    background-color: #6e4383; /* Fundo roxo */
+    font-family: Arial, sans-serif;
+    background-color: #b39ddb;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    color: white;
 }
 
 .container {
-    width: 90%;
-    max-width: 800px;
-    background-color: #854ca1;
+    background-color: #d1c4e9;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-header h1 {
-    text-align: left;
-    font-size: 1.5rem;
+h1 {
+    text-align: center;
     color: white;
-    margin-bottom: 20px;
-}
-
-.section {
-    margin-bottom: 30px;
-}
-
-.section h2 {
+    background-color: #6b529a;
+    padding: 15px;
+    border-radius: 8px 8px 0 0;
     margin-bottom: 10px;
-    font-size: 1.2rem;
-    border-bottom: 1px solid white;
-    padding-bottom: 5px;
+}
+
+form {
+    padding: 20px;
+}
+
+fieldset {
+    border: 1px solid #6b529a;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+legend {
+    font-weight: bold;
+    color: #6b529a;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.form-group label {
+    width: 40%; 
+    text-align: right; 
+    margin-right: 10px; 
+    color: #333;
+}
+
+.form-group input {
+    width: 55%; 
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.radio-group label {
+    color: #333;
 }
 
 .form-row {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
+    flex-direction: column;
+    margin-bottom: 10px;
 }
 
-.form-row label {
-    width: 100px;
-    margin-right: 10px;
-    align-self: center;
-}
-
-input {
-    flex: 1;
-    padding: 10px;
-    border: none;
-    border-bottom: 1px solid white;
-    background: transparent;
+.btn-enviar {
+    background-color: #6A2B8D; 
     color: white;
-    font-size: 1rem;
-    margin-right: 10px;
-}
-
-input::placeholder {
-    color: #d1c7de;
-}
-
-input:focus {
-    outline: none;
-    border-bottom: 1px solid #cfcfcf;
-}
-
-input[type="text"], input[type="email"] {
-    min-width: 200px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }

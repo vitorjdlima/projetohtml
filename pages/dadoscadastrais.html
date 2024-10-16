@@ -1,44 +1,68 @@
-<body>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atualizar Dados Cadastrais</title>
     <link rel="stylesheet" href="../assets/css/dadoscadastrais.css">
-    <div class="container">
-        <header>
-            <h1>ATUALIZAR DADOS CADASTRAIS</h1>
-        </header>
-        <form>
-            <section class="section">
-                <h2>Informações de Endereço</h2>
-                <div class="form-row">
-                    <label for="cep">CEP</label>
-                    <input type="text" id="cep" placeholder="Digite o CEP">
-                </div>
-                <div class="form-row">
-                    <label for="logradouro">Logradouro</label>
-                    <input type="text" id="logradouro" placeholder="Digite o logradouro">
-                    <label for="numero">Número</label>
-                    <input type="text" id="numero" placeholder="Digite o número">
-                </div>
-                <div class="form-row">
-                    <label for="bairro">Bairro</label>
-                    <input type="text" id="bairro" placeholder="Digite o bairro">
-                    <label for="complemento">Complemento</label>
-                    <input type="text" id="complemento" placeholder="Digite o complemento">
-                </div>
-            </section>
+</head>
+<body>
 
-            <section class="section">
-                <h2>Informações de Contato</h2>
-                <div class="form-row">
-                    <label for="telefone-principal">Telefone Principal</label>
-                    <input type="text" id="telefone-principal" placeholder="Digite o telefone principal">
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" placeholder="Digite o e-mail">
+    <div class="container">
+        <h1>ATUALIZAR DADOS CADASTRAIS</h1>
+        
+        <form>
+            <fieldset>
+                <legend>1. Informações de Endereço</legend>
+                <div class="form-group">
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep" placeholder="Digite o CPF">
                 </div>
-                <div class="form-row">
-                    <label for="telefone-secundario">Telefone Secundário</label>
-                    <input type="text" id="telefone-secundario" placeholder="Digite o telefone secundário">
+
+                <div class="form-group">
+                    <label for="logradouro">Logradouro:</label>
+                    <input type="text" id="logradouro" name="logradouro" placeholder="Digite o logradouro">
                 </div>
-            </section>
+                
+                <div class="form-group">
+                    <label for="numero">Número:</label>
+                    <input type="text" id="numero" name="numero" placeholder="Digite o número">
+                </div>
+
+                <div class="form-group">
+                    <label for="bairro">Bairro:</label>
+                    <input type="text" id="bairro" name="bairro" placeholder="Digite o bairro">
+                </div>
+
+                <div class="form-group">
+                    <label for="complemento">Complemento:</label>
+                    <input type="text" id="complemento" name="complemento" placeholder="Digite o complemento">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>2. Informações de Contato</legend>
+                <div class="form-group">
+                    <label for="telefone-principal">Telefone Principal:</label>
+                    <input type="text" id="telefone-principal" name="telefone-principal" placeholder="Digite o telefone principal">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite o e-mail">
+                </div>
+
+                <div class="form-group">
+                    <label for="telefone-secundario">Telefone Secundário:</label>
+                    <input type="text" id="telefone-secundario" name="telefone-secundario" placeholder="Digite o telefone secundário">
+                </div>
+            </fieldset>
+
+            <div class="form-row">
+                <button type="submit" class="btn-enviar">ENVIAR</button>
+            </div>
         </form>
     </div>
+
 </body>
 </html>
